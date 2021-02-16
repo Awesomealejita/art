@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="less4.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="fondo" >
+
+        <div class="navbar">
+            <div class="headerLogo" id="header">
+                <h1>ART+</h1>
+            </div>
+
+            <nav>
+                <ul>
+                    <li>Aprende</li>
+                    <li>Artículos</li>
+                    <li>Tienda</li>
+                    <li>Contacto</li>
+                </ul>
+            </nav>
+        </div>
+        <div class="circulo">
+
+            <svg width="402" height="402">
+                <circle  cx="201"  cy="201" r="200" 
+                stroke="gray" stroke-width="1" fill="none" />
+            </svg>
+
+            <svg width="402" height="402">
+                <circle  cx="201"  cy="201" r="200" 
+                stroke="white" stroke-width="1" fill="none" id="svgCircle"/>
+            </svg>
+           <div>
+               <span id="paso1"></span>
+               <span id="paso2"></span>
+               <span id="paso3"></span>
+               <span id="paso4"></span>
+               <span id="paso5"></span>
+           </div>
+           <div class="artistCaja" id="artistCaja">
+               <div class="artist">
+                   <img src="khArtist.png" alt="">
+                   <h1>Keit Haring</h1>
+                   <p> Artista y activista social su trabajo refleja <br> el espíritu de la generación pop.</p>
+
+               </div>
+
+               <div class="artist">
+                <img src="mdARtist.png" alt="">
+                <h1>Piet Mondrian</h1>
+                <p>Pintor vanguardista neerlandés fundador <br> del neoplasticismo</p>
+
+            </div>
+
+            <div class="artist">
+                <img src="hadid.png" alt="">
+                <h1>Zaha Hadid</h1>
+                <p>Arquitecta anglo-iraquí,procedente de la corriente del deconstructivismo</p>
+
+            </div>
+
+            <div class="artist">
+                <img src="prkng.png" alt="">
+                <h1>Arnold Turner</h1>
+                <p>Fotógrafo americano especializado en  <br>la arquitectura lineal.</p>
+
+            </div>
+
+            <div class="artist">
+                <img src="sclrs.png" alt="">
+                <h1>Kate Stelle</h1>
+                <p>Fotografa asutraliana orientada <br> en el Art Déco</p>
+
+            </div>
+           </div>
+        </div>
+    </div>
+    <script>
+        var svgCircle=document.getElementById("svgCircle");
+        var paso1=document.getElementById("paso1");
+        var paso2=document.getElementById("paso2");
+        var paso3=document.getElementById("paso3");
+        var paso4=document.getElementById("paso4");
+        var paso5=document.getElementById("paso5");
+        var fondo=document.getElementById("fondo");
+        var artistCaja=document.getElementById("artistCaja");
+
+        fondo.style.backgroundImage="linear-gradient(rgba(0, 0, 0, 0.315), rgba(0, 0, 0, 0.8)), url(kh.jpg)";
+
+        
+
+        paso1.addEventListener('click',()=>{
+            svgCircle.style.strokeDashoffset="1004";
+            fondo.style.backgroundImage="linear-gradient(rgba(0, 0, 0, 0.315), rgba(0, 0, 0, 0.8)), url(md.jpg)";
+            artistCaja.style.top="-350px";
+        });
+        paso2.addEventListener('click',()=>{
+            svgCircle.style.strokeDashoffset="753";
+            fondo.style.backgroundImage="linear-gradient(rgba(0, 0, 0, 0.315), rgba(0, 0, 0, 0.8)), url(ar.jpg)";
+            artistCaja.style.top="-800px";
+        });
+
+        paso3.addEventListener('click',()=>{
+            svgCircle.style.strokeDashoffset="502";
+            fondo.style.backgroundImage="linear-gradient(rgba(0, 0, 0, 0.315), rgba(0, 0, 0, 0.8)), url(pk.jpg)";
+            artistCaja.style.top="-1250px";
+        });
+        paso4.addEventListener('click',()=>{
+            svgCircle.style.strokeDashoffset="251";
+            fondo.style.backgroundImage="linear-gradient(rgba(0, 0, 0, 0.315), rgba(0, 0, 0, 0.8)), url(sr.jpg)";
+            artistCaja.style.top="-1700px";
+        });
+        paso5.addEventListener('click',()=>{
+            svgCircle.style.strokeDashoffset="0";
+            fondo.style.backgroundImage="linear-gradient(rgba(0, 0, 0, 0.315), rgba(0, 0, 0, 0.8)), url(kh.jpg)";
+            artistCaja.style.top="100px";
+        });
+
+
+    </script>
+    <div class="footer" id="footer">
+        <h1>Follow us+++</h1>
+    </div>
+ 
+
+
+</body>
+
+</html>
